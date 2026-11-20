@@ -1,0 +1,1328 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>幸运草蓝莓影院 - 品牌影像社区_品质高清内容平台</title>
+<meta name="description" content="幸运草蓝莓影院官方网站，作为深耕影像内容领域的品牌社区，我们聚焦高清原创与多元创作者内容生态，为观众与企业搭建值得信赖的视频品牌平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2317624a'/%3E%3Cpath d='M32 14c8 6 12 12 12 20a12 12 0 0 1-24 0c0-8 4-14 12-20z' fill='%23b9e06a'/%3E%3Ccircle cx='32' cy='36' r='5' fill='%2317624a'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --lc-deep:#0d3b2e;
+    --lc-green:#17624a;
+    --lc-leaf:#2e8b62;
+    --lc-lime:#b9e06a;
+    --lc-mist:#eef6ef;
+    --lc-ink:#12221c;
+    --lc-sub:#4d635b;
+    --lc-line:#d8e6dc;
+    --lc-card:#ffffff;
+    --lc-berry:#4b3f8f;
+    --lc-amber:#d98a2b;
+    --lc-radius:18px;
+    --lc-shadow:0 10px 30px rgba(13,59,46,.09);
+    --lc-max:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+    color:var(--lc-ink);
+    background:var(--lc-mist);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:none;background:none}
+  .lc-sticky-wrap{position:sticky;top:0;z-index:60}
+  /* 公告条 */
+  .lc-notice{
+    background:linear-gradient(90deg,var(--lc-deep),var(--lc-green) 60%,var(--lc-leaf));
+    color:#eafaef;font-size:.82rem;letter-spacing:.02em;
+  }
+  .lc-notice-inner{
+    max-width:var(--lc-max);margin:0 auto;padding:7px 18px;
+    display:flex;align-items:center;gap:14px;overflow:hidden;white-space:nowrap;
+  }
+  .lc-notice-tag{
+    flex:0 0 auto;background:var(--lc-lime);color:var(--lc-deep);
+    font-weight:700;font-size:.72rem;padding:2px 9px;border-radius:999px;
+  }
+  .lc-notice-marquee{flex:1 1 auto;overflow:hidden}
+  .lc-notice-track{display:inline-block;padding-left:0;animation:lcScroll 26s linear infinite}
+  .lc-notice-track span{margin-right:48px;opacity:.95}
+  .lc-notice-track b{color:var(--lc-lime)}
+  @keyframes lcScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+  /* 页头 */
+  .lc-header{background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--lc-line)}
+  .lc-header-inner{
+    max-width:var(--lc-max);margin:0 auto;padding:0 18px;
+    display:flex;align-items:center;gap:22px;height:66px;
+  }
+  .lc-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.06rem;letter-spacing:.01em;flex:0 0 auto}
+  .lc-logo-mark{width:34px;height:34px;flex:0 0 auto}
+  .lc-logo small{display:block;font-size:.62rem;font-weight:500;color:var(--lc-sub);letter-spacing:.14em}
+  .lc-nav{display:flex;align-items:center;gap:4px;margin-left:6px;flex:1 1 auto;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .lc-nav::-webkit-scrollbar{display:none}
+  .lc-nav a{
+    font-size:.88rem;color:var(--lc-sub);padding:7px 11px;border-radius:9px;
+    white-space:nowrap;transition:.2s;
+  }
+  .lc-nav a:hover,.lc-nav a.lc-active{color:var(--lc-green);background:var(--lc-mist);font-weight:600}
+  .lc-head-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+  .lc-search{position:relative;display:flex;align-items:center;background:var(--lc-mist);border:1px solid var(--lc-line);border-radius:999px;padding:5px 5px 5px 14px}
+  .lc-search input{
+    border:none;background:transparent;outline:none;width:132px;font-size:.84rem;color:var(--lc-ink);
+  }
+  .lc-search button{
+    background:var(--lc-green);color:#fff;border-radius:999px;font-size:.78rem;
+    padding:5px 13px;transition:.2s;
+  }
+  .lc-search button:hover{background:var(--lc-leaf)}
+  .lc-search-hint{
+    position:absolute;top:calc(100% + 8px);right:0;width:250px;background:#fff;
+    border:1px solid var(--lc-line);border-radius:14px;box-shadow:var(--lc-shadow);
+    padding:10px 12px;font-size:.8rem;color:var(--lc-sub);display:none;
+  }
+  .lc-search-hint.lc-show{display:block}
+  .lc-search-hint b{color:var(--lc-green)}
+  .lc-burger{
+    display:none;width:38px;height:38px;border-radius:10px;background:var(--lc-mist);
+    border:1px solid var(--lc-line);align-items:center;justify-content:center;flex-direction:column;gap:4px;
+  }
+  .lc-burger span{display:block;width:17px;height:2px;background:var(--lc-ink);border-radius:2px}
+  .lc-mobile-nav{display:none;background:#fff;border-bottom:1px solid var(--lc-line);padding:8px 18px 14px}
+  .lc-mobile-nav.lc-open{display:block}
+  .lc-mobile-nav a{display:block;padding:9px 6px;font-size:.9rem;color:var(--lc-sub);border-bottom:1px dashed var(--lc-line)}
+  .lc-mobile-nav a:last-child{border-bottom:none}
+  /* 通用容器 */
+  .lc-wrap{max-width:var(--lc-max);margin:0 auto;padding:0 18px}
+  .lc-section{padding:56px 0 10px;scroll-margin-top:112px}
+  .lc-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:26px;flex-wrap:wrap}
+  .lc-eyebrow{
+    display:inline-flex;align-items:center;gap:7px;font-size:.72rem;font-weight:700;
+    letter-spacing:.14em;color:var(--lc-leaf);text-transform:uppercase;margin-bottom:6px;
+  }
+  .lc-eyebrow::before{content:"";width:22px;height:2px;background:var(--lc-lime);border-radius:2px}
+  h2.lc-h2{font-size:clamp(1.32rem,2.4vw,1.72rem);font-weight:800;letter-spacing:.01em;line-height:1.35}
+  .lc-lead{color:var(--lc-sub);font-size:.92rem;max-width:640px;margin-top:6px}
+  .lc-more-link{font-size:.84rem;font-weight:700;color:var(--lc-green);border-bottom:2px solid var(--lc-lime);padding-bottom:2px}
+  /* 首屏 */
+  .lc-hero{
+    background:
+      radial-gradient(1100px 420px at 88% -10%,rgba(185,224,106,.30),transparent 62%),
+      radial-gradient(900px 480px at 4% 108%,rgba(75,63,143,.14),transparent 60%),
+      linear-gradient(160deg,#ffffff,var(--lc-mist));
+    border-bottom:1px solid var(--lc-line);
+    overflow:hidden;
+  }
+  .lc-hero-inner{
+    max-width:var(--lc-max);margin:0 auto;padding:52px 18px 46px;
+    display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;
+  }
+  .lc-hero-badge{
+    display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--lc-line);
+    border-radius:999px;padding:4px 14px 4px 6px;font-size:.76rem;color:var(--lc-green);font-weight:600;
+    box-shadow:0 3px 12px rgba(13,59,46,.06);margin-bottom:16px;
+  }
+  .lc-hero-badge i{width:20px;height:20px;border-radius:50%;background:var(--lc-lime);display:inline-flex;align-items:center;justify-content:center;font-style:normal;font-size:.66rem;color:var(--lc-deep);font-weight:800}
+  h1.lc-h1{
+    font-size:clamp(2rem,4.6vw,3.1rem);line-height:1.16;font-weight:900;letter-spacing:-.01em;
+    color:var(--lc-deep);
+  }
+  h1.lc-h1 em{font-style:normal;background:linear-gradient(100deg,var(--lc-green),var(--lc-berry));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lc-hero-sub{font-size:1.02rem;color:var(--lc-sub);margin-top:14px;max-width:520px}
+  .lc-hero-actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+  .lc-btn{
+    display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 24px;
+    font-size:.9rem;font-weight:700;transition:.22s;
+  }
+  .lc-btn-primary{background:var(--lc-green);color:#fff;box-shadow:0 8px 20px rgba(23,98,74,.28)}
+  .lc-btn-primary:hover{background:var(--lc-deep);transform:translateY(-2px)}
+  .lc-btn-ghost{background:#fff;color:var(--lc-green);border:1px solid var(--lc-line)}
+  .lc-btn-ghost:hover{border-color:var(--lc-leaf);transform:translateY(-2px)}
+  .lc-stats{display:flex;gap:30px;margin-top:34px;flex-wrap:wrap}
+  .lc-stat b{display:block;font-size:1.5rem;font-weight:900;color:var(--lc-deep);line-height:1.2}
+  .lc-stat span{font-size:.78rem;color:var(--lc-sub)}
+  .lc-hero-visual{position:relative}
+  .lc-hero-figure{
+    border-radius:24px;overflow:hidden;box-shadow:0 26px 60px rgba(13,59,46,.22);
+    border:5px solid #fff;transform:rotate(-1.2deg);
+  }
+  .lc-hero-figure img{width:100%;aspect-ratio:16/11;object-fit:cover}
+  .lc-hero-float{
+    position:absolute;background:#fff;border-radius:14px;padding:11px 14px;box-shadow:var(--lc-shadow);
+    font-size:.78rem;display:flex;align-items:center;gap:9px;border:1px solid var(--lc-line);
+  }
+  .lc-hero-float b{color:var(--lc-green);font-size:.9rem}
+  .lc-hero-float.f1{left:-14px;bottom:54px}
+  .lc-hero-float.f2{right:-8px;top:26px}
+  .lc-hero-dot{width:8px;height:8px;border-radius:50%;background:var(--lc-lime)}
+  /* 关键词解析 */
+  .lc-about{background:#fff;border-top:1px solid var(--lc-line);border-bottom:1px solid var(--lc-line)}
+  .lc-about-grid{display:grid;grid-template-columns:1fr 320px;gap:40px;align-items:start}
+  .lc-prose p{margin-bottom:15px;font-size:.94rem;color:#2a3d36}
+  .lc-prose h3{font-size:1.02rem;font-weight:800;color:var(--lc-deep);margin:20px 0 8px}
+  .lc-prose strong{color:var(--lc-green)}
+  .lc-side-card{
+    background:var(--lc-mist);border:1px solid var(--lc-line);border-radius:var(--lc-radius);padding:20px;
+    position:sticky;top:130px;
+  }
+  .lc-side-card h4{font-size:.9rem;font-weight:800;color:var(--lc-deep);margin-bottom:12px}
+  .lc-side-list{list-style:none;display:grid;gap:10px}
+  .lc-side-list li{display:flex;gap:10px;font-size:.82rem;color:var(--lc-sub)}
+  .lc-side-list .n{flex:0 0 auto;width:22px;height:22px;border-radius:7px;background:var(--lc-green);color:#fff;font-size:.7rem;display:flex;align-items:center;justify-content:center;font-weight:700}
+  /* 焦点内容 */
+  .lc-focus-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:auto auto;gap:18px}
+  .lc-vcard{
+    background:var(--lc-card);border-radius:var(--lc-radius);overflow:hidden;
+    border:1px solid var(--lc-line);box-shadow:0 2px 8px rgba(13,59,46,.04);
+    transition:.25s;display:flex;flex-direction:column;
+  }
+  .lc-vcard:hover{transform:translateY(-4px);box-shadow:var(--lc-shadow);border-color:#bfd8c7}
+  .lc-vthumb{position:relative;overflow:hidden;background:#dce9df}
+  .lc-vthumb img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.5s}
+  .lc-vcard:hover .lc-vthumb img{transform:scale(1.05)}
+  .lc-vthumb::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,transparent 42%,rgba(8,35,26,.55));
+  }
+  .lc-play{
+    position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;
+    width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.86);
+    display:flex;align-items:center;justify-content:center;transition:.25s;
+  }
+  .lc-play::before{content:"";border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent var(--lc-green);margin-left:3px}
+  .lc-vcard:hover .lc-play{background:var(--lc-lime)}
+  .lc-vtag{
+    position:absolute;left:10px;top:10px;z-index:2;background:rgba(13,59,46,.82);color:#eafaef;
+    font-size:.68rem;padding:3px 9px;border-radius:999px;letter-spacing:.04em;
+  }
+  .lc-vdur{position:absolute;right:10px;bottom:10px;z-index:2;background:rgba(8,35,26,.72);color:#fff;font-size:.68rem;padding:2px 8px;border-radius:6px}
+  .lc-vbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:7px;flex:1 1 auto}
+  .lc-vtitle{font-size:.95rem;font-weight:800;line-height:1.5;color:var(--lc-ink)}
+  .lc-vcard-big .lc-vtitle{font-size:1.12rem}
+  .lc-vdesc{font-size:.8rem;color:var(--lc-sub);line-height:1.65}
+  .lc-vmeta{display:flex;align-items:center;gap:8px;font-size:.74rem;color:#7d9189;margin-top:auto;flex-wrap:wrap}
+  .lc-vmeta .dot{width:3px;height:3px;border-radius:50%;background:#b6c7bf}
+  .lc-vfoot{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px dashed var(--lc-line);padding-top:9px;margin-top:4px}
+  .lc-author{display:flex;align-items:center;gap:7px;font-size:.76rem;color:var(--lc-sub)}
+  .lc-avatar{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.66rem;font-weight:800;color:#fff;flex:0 0 auto}
+  .lc-avatarset .lc-avatar:nth-child(1){background:var(--lc-green)}
+  .lc-like{
+    display:inline-flex;align-items:center;gap:5px;font-size:.76rem;color:#7d9189;
+    padding:3px 9px;border-radius:999px;border:1px solid transparent;transition:.2s;
+  }
+  .lc-like:hover{background:var(--lc-mist);color:var(--lc-green)}
+  .lc-like.lc-on{color:#d0532b;background:#fdf0e9;border-color:#f4d6c6}
+  .lc-like .h{font-size:.9rem}
+  .lc-card-big{grid-row:span 2}
+  .lc-card-big .lc-vthumb img{aspect-ratio:16/10}
+  .lc-focus-grid .lc-side-mini .lc-vthumb img{aspect-ratio:16/9}
+  /* 专题 */
+  .lc-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .lc-topic{
+    position:relative;border-radius:var(--lc-radius);overflow:hidden;min-height:210px;
+    display:flex;flex-direction:column;justify-content:flex-end;padding:18px;color:#fff;
+    isolation:isolate;transition:.25s;
+  }
+  .lc-topic:hover{transform:translateY(-4px)}
+  .lc-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:.5s}
+  .lc-topic:hover img{transform:scale(1.06)}
+  .lc-topic::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,35,26,.05),rgba(8,35,26,.82))}
+  .lc-topic .k{font-size:.68rem;letter-spacing:.12em;color:var(--lc-lime);font-weight:700}
+  .lc-topic h3{font-size:1rem;font-weight:800;line-height:1.4;margin:5px 0 6px}
+  .lc-topic p{font-size:.75rem;opacity:.86;line-height:1.5}
+  .lc-topic .st{
+    display:inline-flex;align-items:center;gap:6px;font-size:.68rem;margin-top:10px;
+    background:rgba(255,255,255,.16);backdrop-filter:blur(4px);padding:3px 10px;border-radius:999px;width:fit-content;
+  }
+  .lc-topic .st i{width:6px;height:6px;border-radius:50%;background:var(--lc-lime);font-style:normal}
+  /* 创作者 */
+  .lc-creator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .lc-creator{
+    background:#fff;border:1px solid var(--lc-line);border-radius:var(--lc-radius);padding:18px;
+    display:flex;gap:14px;transition:.25s;
+  }
+  .lc-creator:hover{border-color:#bfd8c7;box-shadow:var(--lc-shadow);transform:translateY(-3px)}
+  .lc-creator .lc-avatar{width:48px;height:48px;font-size:.95rem}
+  .lc-creator-main{flex:1 1 auto;min-width:0}
+  .lc-creator h3{font-size:.95rem;font-weight:800;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+  .lc-creator h3 .cat{font-size:.64rem;font-weight:700;background:var(--lc-mist);color:var(--lc-green);padding:2px 8px;border-radius:999px;border:1px solid var(--lc-line)}
+  .lc-creator p{font-size:.78rem;color:var(--lc-sub);margin-top:6px;line-height:1.6}
+  .lc-creator .nums{display:flex;gap:14px;font-size:.72rem;color:#7d9189;margin-top:10px}
+  .lc-creator .nums b{color:var(--lc-deep);font-size:.82rem}
+  .lc-creator-more{font-size:.74rem;font-weight:700;color:var(--lc-green);margin-top:9px;display:inline-block}
+  /* 影像墙 */
+  .lc-wall{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:96px;gap:12px}
+  .lc-wall figure{position:relative;overflow:hidden;border-radius:14px;border:1px solid var(--lc-line);background:#dce9df}
+  .lc-wall img{width:100%;height:100%;object-fit:cover;transition:.45s}
+  .lc-wall figure:hover img{transform:scale(1.07)}
+  .lc-wall figcaption{
+    position:absolute;left:0;right:0;bottom:0;padding:20px 10px 8px;font-size:.7rem;color:#fff;
+    background:linear-gradient(180deg,transparent,rgba(8,35,26,.76));
+  }
+  .lc-wall .w2{grid-column:span 2;grid-row:span 2}
+  .lc-wall .w2x{grid-column:span 2}
+  .lc-wall .h2x{grid-row:span 2}
+  .lc-wall .w3{grid-column:span 3;grid-row:span 2}
+  /* 评价 */
+  .lc-review-grid{columns:3;column-gap:16px}
+  .lc-review{
+    break-inside:avoid;background:#fff;border:1px solid var(--lc-line);border-radius:16px;
+    padding:16px 17px;margin-bottom:16px;transition:.2s;
+  }
+  .lc-review:hover{border-color:#bfd8c7}
+  .lc-review .top{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+  .lc-review .top .lc-avatar{width:32px;height:32px;font-size:.72rem}
+  .lc-review .name{font-size:.82rem;font-weight:800}
+  .lc-review .role{font-size:.68rem;color:#7d9189}
+  .lc-review p{font-size:.82rem;color:#31453d;line-height:1.72}
+  .lc-review .stars{color:var(--lc-amber);font-size:.78rem;letter-spacing:2px;margin-top:9px}
+  /* 动态 */
+  .lc-news-list{display:grid;gap:12px}
+  .lc-news{
+    display:grid;grid-template-columns:88px 1fr auto;gap:16px;align-items:center;
+    background:#fff;border:1px solid var(--lc-line);border-radius:14px;padding:14px 18px;transition:.2s;
+  }
+  .lc-news:hover{border-color:#bfd8c7;background:#fbfefb}
+  .lc-news time{font-size:.74rem;color:var(--lc-green);font-weight:800;letter-spacing:.02em}
+  .lc-news h3{font-size:.9rem;font-weight:700}
+  .lc-news p{font-size:.76rem;color:var(--lc-sub);margin-top:2px}
+  .lc-news .tag{font-size:.68rem;color:var(--lc-berry);background:#efedf9;padding:2px 9px;border-radius:999px;white-space:nowrap}
+  /* 合作 */
+  .lc-partners{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .lc-partner{
+    background:#fff;border:1px solid var(--lc-line);border-radius:12px;padding:14px 22px;
+    font-size:.84rem;font-weight:700;color:var(--lc-sub);display:flex;align-items:center;gap:9px;transition:.2s;
+  }
+  .lc-partner:hover{color:var(--lc-green);border-color:#bfd8c7}
+  .lc-partner i{width:9px;height:9px;border-radius:3px;background:var(--lc-lime);font-style:normal}
+  /* FAQ */
+  .lc-faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .lc-faq details{
+    background:#fff;border:1px solid var(--lc-line);border-radius:14px;padding:0 16px;transition:.2s;
+  }
+  .lc-faq details[open]{border-color:#bfd8c7;box-shadow:var(--lc-shadow)}
+  .lc-faq summary{
+    list-style:none;cursor:pointer;padding:14px 0;font-size:.88rem;font-weight:700;
+    display:flex;justify-content:space-between;align-items:center;gap:10px;
+  }
+  .lc-faq summary::-webkit-details-marker{display:none}
+  .lc-faq summary::after{content:"+";font-size:1.05rem;color:var(--lc-green);font-weight:400;transition:.2s}
+  .lc-faq details[open] summary::after{content:"−"}
+  .lc-faq .a{padding:0 0 15px;font-size:.82rem;color:var(--lc-sub);line-height:1.72}
+  /* 投稿联系 */
+  .lc-cta{
+    background:linear-gradient(120deg,var(--lc-deep),var(--lc-green) 62%,#2a7a56);
+    border-radius:24px;padding:38px 34px;color:#eafaf0;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;
+    overflow:hidden;position:relative;
+  }
+  .lc-cta::after{
+    content:"";position:absolute;right:-70px;top:-70px;width:260px;height:260px;border-radius:50%;
+    background:radial-gradient(circle,rgba(185,224,106,.36),transparent 68%);
+  }
+  .lc-cta h2{font-size:clamp(1.3rem,2.5vw,1.7rem);font-weight:900;line-height:1.4;color:#fff}
+  .lc-cta p{font-size:.86rem;opacity:.85;margin-top:10px;max-width:520px}
+  .lc-cta-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+  .lc-cta .lc-btn-primary{background:var(--lc-lime);color:var(--lc-deep);box-shadow:none}
+  .lc-cta .lc-btn-primary:hover{background:#cbec83}
+  .lc-cta .lc-btn-ghost{background:rgba(255,255,255,.1);color:#eafaf0;border-color:rgba(255,255,255,.28)}
+  .lc-cta .lc-btn-ghost:hover{background:rgba(255,255,255,.18)}
+  .lc-cta-side{position:relative;z-index:1;display:grid;gap:10px}
+  .lc-cta-item{display:flex;align-items:center;gap:10px;font-size:.82rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:11px 14px}
+  .lc-cta-item b{color:var(--lc-lime);font-weight:800}
+  /* 页脚 */
+  .lc-footer{background:#0a2c22;color:#b9d3c7;margin-top:56px;padding:44px 0 0;font-size:.82rem}
+  .lc-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+  .lc-footer h4{color:#fff;font-size:.86rem;font-weight:800;margin-bottom:12px;letter-spacing:.02em}
+  .lc-footer .lc-logo{color:#fff}
+  .lc-footer .lc-logo small{color:#8fb5a5}
+  .lc-footer p{line-height:1.8;font-size:.78rem;color:#8fb5a5}
+  .lc-footer ul{list-style:none;display:grid;gap:7px;font-size:.78rem}
+  .lc-footer li a:hover{color:var(--lc-lime)}
+  .lc-footer-bottom{
+    border-top:1px solid rgba(255,255,255,.1);margin-top:34px;padding:16px 0 20px;
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.74rem;color:#7fa596;
+  }
+  /* 回到顶部 */
+  .lc-top{
+    position:fixed;right:20px;bottom:22px;z-index:70;width:44px;height:44px;border-radius:14px;
+    background:var(--lc-green);color:#fff;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 24px rgba(13,59,46,.3);opacity:0;pointer-events:none;transition:.25s;font-size:1.05rem;
+  }
+  .lc-top.lc-show{opacity:1;pointer-events:auto}
+  .lc-top:hover{background:var(--lc-deep);transform:translateY(-2px)}
+  /* Toast & 弹窗 */
+  .lc-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:120;
+    background:rgba(10,44,34,.95);color:#eafaf0;font-size:.82rem;padding:10px 20px;border-radius:999px;
+    opacity:0;pointer-events:none;transition:.3s;box-shadow:0 10px 26px rgba(0,0,0,.24);
+  }
+  .lc-toast.lc-show{opacity:1;transform:translate(-50%,0)}
+  .lc-modal-mask{
+    position:fixed;inset:0;background:rgba(8,30,24,.55);backdrop-filter:blur(3px);z-index:110;
+    display:none;align-items:center;justify-content:center;padding:18px;
+  }
+  .lc-modal-mask.lc-show{display:flex}
+  .lc-modal{
+    background:#fff;border-radius:20px;max-width:440px;width:100%;padding:24px;box-shadow:0 30px 70px rgba(0,0,0,.3);
+    animation:lcPop .22s ease;
+  }
+  @keyframes lcPop{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}
+  .lc-modal h3{font-size:1.02rem;font-weight:800;color:var(--lc-deep);margin-bottom:6px}
+  .lc-modal .sub{font-size:.8rem;color:var(--lc-sub);margin-bottom:16px}
+  .lc-modal label{display:block;font-size:.78rem;font-weight:700;color:var(--lc-sub);margin-bottom:5px}
+  .lc-modal input,.lc-modal textarea{
+    width:100%;border:1px solid var(--lc-line);border-radius:10px;padding:9px 12px;font-size:.84rem;
+    outline:none;font-family:inherit;margin-bottom:12px;background:#fbfefb;color:var(--lc-ink);
+  }
+  .lc-modal input:focus,.lc-modal textarea:focus{border-color:var(--lc-leaf)}
+  .lc-modal .row{display:flex;gap:10px;justify-content:flex-end;margin-top:4px}
+  .lc-modal .lc-btn{padding:9px 18px;font-size:.82rem}
+  .lc-share-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:6px}
+  .lc-share-grid button{
+    display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 6px;border-radius:12px;
+    background:var(--lc-mist);font-size:.74rem;color:var(--lc-sub);border:1px solid var(--lc-line);transition:.2s;
+  }
+  .lc-share-grid button:hover{background:#e3f0e6;color:var(--lc-green)}
+  .lc-share-grid em{font-style:normal;font-size:1.1rem}
+  /* 响应式 */
+  @media (max-width:1000px){
+    .lc-hero-inner{grid-template-columns:1fr;gap:30px}
+    .lc-hero-visual{max-width:560px}
+    .lc-about-grid{grid-template-columns:1fr}
+    .lc-side-card{position:static}
+    .lc-focus-grid{grid-template-columns:1fr 1fr}
+    .lc-card-big{grid-column:span 2;grid-row:auto}
+    .lc-topic-grid{grid-template-columns:1fr 1fr}
+    .lc-creator-grid{grid-template-columns:1fr 1fr}
+    .lc-review-grid{columns:2}
+    .lc-wall{grid-template-columns:repeat(4,1fr)}
+    .lc-footer-grid{grid-template-columns:1fr 1fr}
+    .lc-cta{grid-template-columns:1fr}
+  }
+  @media (max-width:760px){
+    .lc-nav{display:none}
+    .lc-search input{width:96px}
+    .lc-burger{display:flex}
+    .lc-section{padding:40px 0 8px;scroll-margin-top:104px}
+    .lc-hero-inner{padding:36px 18px 34px}
+    .lc-stats{gap:22px}
+    .lc-focus-grid{grid-template-columns:1fr}
+    .lc-card-big{grid-column:auto}
+    .lc-topic-grid{grid-template-columns:1fr}
+    .lc-creator-grid{grid-template-columns:1fr}
+    .lc-review-grid{columns:1}
+    .lc-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:110px}
+    .lc-wall .w3{grid-column:span 2}
+    .lc-faq{grid-template-columns:1fr}
+    .lc-news{grid-template-columns:1fr;gap:6px}
+    .lc-news .tag{width:fit-content}
+    .lc-cta{padding:26px 20px}
+    .lc-footer-grid{grid-template-columns:1fr}
+    .lc-notice-inner{font-size:.74rem;padding:6px 14px}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="lc-sticky-wrap">
+  <div class="lc-notice">
+    <div class="lc-notice-inner">
+      <span class="lc-notice-tag">更新</span>
+      <div class="lc-notice-marquee">
+        <div class="lc-notice-track">
+          <span><b>11月18日</b> 幸运草蓝莓影院「秋日影像计划」专题上线，收录 42 部原创短片</span>
+          <span><b>11月15日</b> 创作者扶持第二期报名开启，面向生活记录与城市探索方向</span>
+          <span><b>11月12日</b> 平台高清播放矩阵升级，画质标签与章节索引同步更新</span>
+          <span><b>11月18日</b> 幸运草蓝莓影院「秋日影像计划」专题上线，收录 42 部原创短片</span>
+          <span><b>11月15日</b> 创作者扶持第二期报名开启，面向生活记录与城市探索方向</span>
+          <span><b>11月12日</b> 平台高清播放矩阵升级，画质标签与章节索引同步更新</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="lc-header">
+    <div class="lc-header-inner">
+      <a href="#lc-home" class="lc-logo" aria-label="幸运草蓝莓影院首页">
+        <svg class="lc-logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#17624a"/>
+          <path d="M32 13c9 7 13 13 13 21a13 13 0 0 1-26 0c0-8 4-14 13-21z" fill="#b9e06a"/>
+          <circle cx="32" cy="36" r="5" fill="#17624a"/>
+          <circle cx="18" cy="22" r="3" fill="#4b3f8f"/>
+          <circle cx="46" cy="22" r="3" fill="#4b3f8f"/>
+        </svg>
+        <span>幸运草蓝莓影院<small>LUCKY CLOVER · BERRY</small></span>
+      </a>
+      <nav class="lc-nav" aria-label="主导航">
+        <a href="#lc-home" class="lc-active">首页</a>
+        <a href="#lc-focus">焦点影像</a>
+        <a href="#lc-topic">专题企划</a>
+        <a href="#lc-creator">创作者</a>
+        <a href="#lc-wall">作品墙</a>
+        <a href="#lc-news">企业动态</a>
+        <a href="#lc-faq">帮助</a>
+        <a href="#lc-join">联系</a>
+      </nav>
+      <div class="lc-head-tools">
+        <div class="lc-search">
+          <input type="search" id="lcSearchInput" placeholder="搜索影像 / 创作者" aria-label="站内搜索">
+          <button type="button" id="lcSearchBtn">搜索</button>
+          <div class="lc-search-hint" id="lcSearchHint"></div>
+        </div>
+        <button class="lc-burger" id="lcBurger" aria-label="展开导航" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="lc-mobile-nav" id="lcMobileNav">
+      <a href="#lc-home">首页</a>
+      <a href="#lc-focus">焦点影像</a>
+      <a href="#lc-topic">专题企划</a>
+      <a href="#lc-creator">创作者</a>
+      <a href="#lc-wall">作品墙</a>
+      <a href="#lc-news">企业动态</a>
+      <a href="#lc-faq">帮助</a>
+      <a href="#lc-join">联系</a>
+    </div>
+  </header>
+</div>
+
+<main id="lc-home">
+
+  <!-- 首屏 -->
+  <section class="lc-hero">
+    <div class="lc-hero-inner">
+      <div>
+        <span class="lc-hero-badge"><i>草</i> 幸运草蓝莓影院 官方网站 · 品牌影像社区</span>
+        <h1 class="lc-h1">幸运草蓝莓影院<em>，把好影像留在身边</em></h1>
+        <p class="lc-hero-sub">作为一家持续运营的视频品牌，我们以「幸运草」的耐心与「蓝莓」的饱满，聚合原创影像、生活记录与深度访谈，让每一次观看都成为一段值得回味的陪伴。</p>
+        <div class="lc-hero-actions">
+          <a href="#lc-focus" class="lc-btn lc-btn-primary">进入焦点影像 <span aria-hidden="true">→</span></a>
+          <a href="#lc-join" class="lc-btn lc-btn-ghost">创作者投稿入口</a>
+        </div>
+        <div class="lc-stats">
+          <div class="lc-stat"><b>4,860+</b><span>原创影像作品</span></div>
+          <div class="lc-stat"><b>216 位</b><span>签约创作者</span></div>
+          <div class="lc-stat"><b>98.6%</b><span>用户口碑好评率</span></div>
+        </div>
+      </div>
+      <div class="lc-hero-visual">
+        <div class="lc-hero-figure">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23d9ecd9'/%3E%3Cstop offset='1' stop-color='%23f4faf0'/%3E%3C/linearGradient%3E%3ClinearGradient id='hill' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232e8b62'/%3E%3Cstop offset='1' stop-color='%230d3b2e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23sky)'/%3E%3Ccircle cx='640' cy='120' r='70' fill='%23b9e06a' opacity='.85'/%3E%3Cpath d='M0 380 Q180 240 360 350 T800 300 V550 H0 Z' fill='url(%23hill)'/%3E%3Cpath d='M0 460 Q220 360 430 440 T800 410 V550 H0 Z' fill='%2317624a' opacity='.85'/%3E%3Cg fill='%23ffffff' opacity='.9'%3E%3Ccircle cx='150' cy='120' r='42'/%3E%3Ccircle cx='196' cy='132' r='30'/%3E%3Ccircle cx='112' cy='140' r='26'/%3E%3C/g%3E%3Cg transform='translate(360 300)'%3E%3Ccircle r='62' fill='%23ffffff' opacity='.92'/%3E%3Cpath d='M-14 -24 L30 0 L-14 24 Z' fill='%2317624a'/%3E%3C/g%3E%3Cg fill='%234b3f8f'%3E%3Ccircle cx='120' cy='420' r='10'/%3E%3Ccircle cx='700' cy='470' r='8'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='3' fill='none' opacity='.6'%3E%3Cpath d='M60 480 q40 -26 80 0'/%3E%3Cpath d='M600 500 q40 -26 80 0'/%3E%3C/g%3E%3C/svg%3E" alt="幸运草蓝莓影院品牌主视觉：晨雾中起伏的绿色山丘与播放标识">
+        </div>
+        <div class="lc-hero-float f1"><span class="lc-hero-dot"></span><div><b>42 部新片</b> 本周上架</div></div>
+        <div class="lc-hero-float f2"><span class="lc-hero-dot"></span><div><b>高清 1080P</b> 全站可切换</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析 -->
+  <section class="lc-about lc-section" id="lc-about">
+    <div class="lc-wrap">
+      <div class="lc-section-head">
+        <div>
+          <span class="lc-eyebrow">品牌解析 / About</span>
+          <h2 class="lc-h2">关于幸运草蓝莓影院，一个长期生长的影像品牌</h2>
+          <p class="lc-lead">从名字开始理解平台：幸运草是耐心与偶然的相遇，蓝莓是饱满而真实的日常。我们把这套气质，做成一家官方网站的底层语言。</p>
+        </div>
+      </div>
+      <div class="lc-about-grid">
+        <div class="lc-prose">
+          <p><strong>幸运草蓝莓影院</strong>是一家以视频内容为核心的品牌影像社区。我们并不追逐短促的流量高潮，而是把「幸运草」所象征的耐心与「蓝莓」所象征的饱满果实感结合起来，构建一个可以长久停留的内容生态。作为官方网站，这里汇总了平台自制的原创短片、签约创作者的生活记录，以及来自不同城市的深度访谈与行业观察。每一个栏目都经过人工编辑的把关，保证「精品内容」不是一个口号，而是能被逐条翻看的具体条目。</p>
+          <h3>一、我们为什么叫幸运草蓝莓影院</h3>
+          <p>名字里藏着两层含义。「幸运草」代表一种低概率的相遇——在大量影像信息里，恰好遇到一部打动你的片子，这本身需要一点运气；平台能做的，是把这份运气的概率提高，通过推荐机制、专题企划和编辑精选，让好内容被更多人看见。「蓝莓」代表颗粒感与真实的酸甜，它提醒我们，影像不必都走向宏大叙事，普通人的一段日常、一次失败、一场家庭聚餐，同样值得被高质量的镜头保留下来。</p>
+          <p>因此，在幸运草蓝莓影院的品牌体系里，「记录」与「陪伴」是长期关键词。我们希望创作者上传的每一段素材，都能在平台上获得体面的呈现：清晰的画质说明、完整的章节信息、真实的数据展示，而不是被压缩成一张张快速划过的封面。</p>
+          <h3>二、内容生态是如何被组织起来的</h3>
+          <p>平台的内容体系分为三条主线。第一条是<strong>焦点影像</strong>，由编辑团队每周挑选 2 至 4 部重点作品，从选题、剪辑到声音设计逐项点评；第二条是<strong>专题企划</strong>，围绕季节、城市、职业或某种生活态度做主题聚合，专题会有明确的更新状态，让观众知道下一次补充内容的大致时间；第三条是<strong>创作者矩阵</strong>，我们不把作者当作平台不可见的后台角色，而是为其建立可翻阅的身份页，包含擅长领域、作品数量与公开简介，帮助观众建立长期关注关系。</p>
+          <p>三条主线之外，影像墙是自由度最高的区域。这里展示的是创作者主动参与的影像挑战作品，尺寸大小混合排列，不追求整齐划一，而是保留手工档案盒式的松散组织。我们相信，一家官方网站如果只是信息罗列，会显得冷淡；而恰当的松散，反而更接近真实社区的呼吸感。</p>
+          <h3>三、品质从何处体现</h3>
+          <p>第一是画质与播放的基础体验。平台支持多档清晰度切换，所有焦点内容均提供 1080P 以上的母版信息，并在页面中标注画面比例与技术说明。第二是文字层面的讲究。每部作品都配有编辑撰写的简介与章节提示，避免观众在信息缺失的情况下来回拖动进度条。第三是<strong>正版与原创</strong>的坚持，平台对上传内容执行来源登记，并鼓励创作者标明拍摄地与创作时间，这些细节让「值得信赖」成为可以验证的东西，而不只是一句文案。</p>
+          <p>第四是社区秩序。我们把评论区当作内容的一部分来运营，鼓励具体的、有信息量的反馈。当一条评论只留下「好看」两个字时，我们会通过互动引导让观众补充感受；当出现不同意见时，平台希望看到的是基于作品的讨论，而不是对作者的情绪宣泄。这样的秩序不是靠规则堆出来的，而是靠一次次优秀的讨论示范带出来的。</p>
+          <h3>四、给创作者的一份诚意</h3>
+          <p>幸运草蓝莓影院面向创作者开放投稿入口，接受生活记录、城市探索、人物访谈、手作教程、健康运动与美食烹饪等方向的作品。投递后，编辑团队会在七个工作日内给出反馈，包含内容建议与发布节奏参考。对于持续投稿的创作者，平台提供更高规格的推荐位、专题联合策划机会，以及品牌合作优先沟通权。我们不想把创作者当成素材供给方，而更希望成为共同完成作品的合作方。</p>
+          <p>同时，平台每年会围绕不同主题发起影像挑战与投票活动，鼓励创作者用有限的时间完成一个完整的表达。这类活动的意义并不在于名次，而在于让一位平时只拍空镜的作者，第一次尝试写解说词；让一位习惯长片的作者，学习在三分钟里完成叙事。成长，正是通过这些具体的限制发生的。</p>
+          <h3>五、面向观众的那一面</h3>
+          <p>对观众而言，我们希望幸运草蓝莓影院是一个不那么焦虑的地方。你可以在首页慢慢挑选，也可以直接通过标签筛选感兴趣的方向；可以只看三分钟短片，也可以留出一个傍晚看完一整个专题。平台不设置打断式弹窗，不制造压迫感强的连续播放下一条，我们更希望观众在看完一部作品后，愿意在评论区停留一会儿，写点自己的事。</p>
+          <p>如果一定要用一句话概括这个品牌，那大概是：<strong>幸运草蓝莓影院想做一个认真对待影像的地方</strong>——对创作者认真，对观众认真，也对自己持续运营的每一天认真。</p>
+        </div>
+        <aside class="lc-side-card">
+          <h4>品牌速览</h4>
+          <ul class="lc-side-list">
+            <li><span class="n">01</span><div><b>官方网站</b> · 平台所有栏目与投稿入口统一发布</div></li>
+            <li><span class="n">02</span><div><b>原创优先</b> · 来源登记 + 编辑精选双机制</div></li>
+            <li><span class="n">03</span><div><b>高清呈现</b> · 焦点内容提供 1080P 母版信息</div></li>
+            <li><span class="n">04</span><div><b>社区共创</b> · 影像挑战、专题联合与投票活动</div></li>
+            <li><span class="n">05</span><div><b>持续运营</b> · 每周更新，专题状态公开透明</div></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点影像 -->
+  <section class="lc-section" id="lc-focus">
+    <div class="lc-wrap">
+      <div class="lc-section-head">
+        <div>
+          <span class="lc-eyebrow">焦点影像 / Focus</span>
+          <h2 class="lc-h2">本周焦点：值得完整看完的六部作品</h2>
+          <p class="lc-lead">由编辑团队逐一看片后选出，覆盖城市探索、人物访谈与日常记录三个方向。</p>
+        </div>
+        <a href="#lc-topic" class="lc-more-link">查看专题企划 →</a>
+      </div>
+
+      <div class="lc-focus-grid lc-avatarset">
+        <article class="lc-vcard lc-card-big">
+          <div class="lc-vthumb">
+            <span class="lc-vtag">编辑精选</span>
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='dusk' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23e9b46a'/%3E%3Cstop offset='.55' stop-color='%23c9784f'/%3E%3Cstop offset='1' stop-color='%233d4a63'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23dusk)'/%3E%3Ccircle cx='560' cy='170' r='54' fill='%23fbe6b4' opacity='.92'/%3E%3Cg fill='%23222c3f'%3E%3Crect x='0' y='300' width='110' height='200'/%3E%3Crect x='130' y='250' width='90' height='250'/%3E%3Crect x='240' y='330' width='120' height='170'/%3E%3Crect x='380' y='280' width='80' height='220'/%3E%3Crect x='480' y='350' width='140' height='150'/%3E%3Crect x='640' y='300' width='100' height='200'/%3E%3C/g%3E%3Cg fill='%23ffd894'%3E%3Crect x='18' y='322' width='12' height='16'/%3E%3Crect x='48' y='322' width='12' height='16'/%3E%3Crect x='150' y='276' width='12' height='16'/%3E%3Crect x='270' y='352' width='12' height='16'/%3E%3Crect x='510' y='374' width='12' height='16'/%3E%3Crect x='666' y='322' width='12' height='16'/%3E%3C/g%3E%3Crect x='0' y='430' width='800' height='70' fill='%231a2233' opacity='.65'/%3E%3C/svg%3E" alt="焦点作品封面：黄昏时分海边小城的楼群与暖橙天色">
+            <span class="lc-play" aria-hidden="true"></span>
+            <span class="lc-vdur">18:42</span>
+          </div>
+          <div class="lc-vbody">
+            <h3 class="lc-vtitle">黄昏之后：一座海边小城的慢速夜行</h3>
+            <p class="lc-vdesc">作者用四天时间记录了一座小城从傍晚到深夜的呼吸节奏。镜头停留在修船厂的焊花、面馆的蒸汽与便利店门口的沉默，配乐克制，旁白很少。它不提供答案，只让人想起自己也曾在这类街区里走过。</p>
+            <div class="lc-vmeta"><span>城市探索</span><span class="dot"></span><span>4 天跟拍</span><span class="dot"></span><span>11月16日更新</span></div>
+            <div class="lc-vfoot">
+              <span class="lc-author"><span class="lc-avatar">航</span> 林远航</span>
+              <button class="lc-like" data-count="1284" aria-label="点赞"><span class="h">♡</span><span class="num">1284</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vthumb">
+            <span class="lc-vtag">人物访谈</span>
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23f2f6f0'/%3E%3Ccircle cx='230' cy='220' r='110' fill='%23cfe3c4'/%3E%3Ccircle cx='230' cy='185' r='46' fill='%232e8b62'/%3E%3Cpath d='M150 330 q80 -110 160 0' fill='%2317624a'/%3E%3Crect x='420' y='120' width='300' height='14' rx='7' fill='%23b9e06a'/%3E%3Crect x='420' y='160' width='240' height='12' rx='6' fill='%23a9c4b6'/%3E%3Crect x='420' y='192' width='280' height='12' rx='6' fill='%23a9c4b6'/%3E%3Crect x='420' y='224' width='200' height='12' rx='6' fill='%23a9c4b6'/%3E%3Crect x='420' y='286' width='150' height='40' rx='20' fill='%2317624a'/%3E%3C/svg%3E" alt="访谈栏目封面：绿色圆环中的人物剪影与文本排版">
+            <span class="lc-play" aria-hidden="true"></span>
+            <span class="lc-vdur">26:05</span>
+          </div>
+          <div class="lc-vbody">
+            <h3 class="lc-vtitle">对话手作人：把一件小事做上十二年</h3>
+            <p class="lc-vdesc">从学徒到独立工作室，他用十二年只做一种木器。访谈谈到了失败订单、价格焦虑与手艺人的耐心。</p>
+            <div class="lc-vmeta"><span>人物访谈</span><span class="dot"></span><span>11月14日</span></div>
+            <div class="lc-vfoot">
+              <span class="lc-author"><span class="lc-avatar">岚</span> 沈岚</span>
+              <button class="lc-like" data-count="876" aria-label="点赞"><span class="h">♡</span><span class="num">876</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vthumb">
+            <span class="lc-vtag">日常记录</span>
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23fdf4e4'/%3E%3Crect x='0' y='300' width='800' height='150' fill='%23e9d3a7'/%3E%3Crect x='90' y='120' width='220' height='200' rx='12' fill='%23ffffff'/%3E%3Crect x='110' y='150' width='180' height='10' rx='5' fill='%23dab572'/%3E%3Crect x='110' y='176' width='140' height='10' rx='5' fill='%23e6cfa2'/%3E%3Crect x='110' y='202' width='160' height='10' rx='5' fill='%23e6cfa2'/%3E%3Ccircle cx='560' cy='200' r='80' fill='%23d98a2b' opacity='.85'/%3E%3Ccircle cx='560' cy='200' r='46' fill='%23fdf4e4'/%3E%3Cg stroke='%23b98a4a' stroke-width='6' fill='none'%3E%3Cpath d='M420 350 q140 -50 280 0'/%3E%3C/g%3E%3C/svg%3E" alt="生活记录封面：米色桌面上摊开的笔记本与一杯咖啡">
+            <span class="lc-play" aria-hidden="true"></span>
+            <span class="lc-vdur">09:15</span>
+          </div>
+          <div class="lc-vbody">
+            <h3 class="lc-vtitle">一个人早餐的第 100 天</h3>
+            <p class="lc-vdesc">不追求精致摆盘，只记录每天六点半的厨房声响。这期是第一遍回看与总结。</p>
+            <div class="lc-vmeta"><span>生活方式</span><span class="dot"></span><span>11月13日</span></div>
+            <div class="lc-vfoot">
+              <span class="lc-author"><span class="lc-avatar">柚</span> 柚子小满</span>
+              <button class="lc-like" data-count="643" aria-label="点赞"><span class="h">♡</span><span class="num">643</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vthumb">
+            <span class="lc-vtag">教程干货</span>
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%230f2a35'/%3E%3Cg stroke='%2351c2c9' stroke-width='3' fill='none'%3E%3Cpath d='M0 340 h800'/%3E%3Cpath d='M0 300 h800' opacity='.5'/%3E%3C/g%3E%3Cg fill='%2351c2c9'%3E%3Crect x='80' y='290' width='70' height='50'/%3E%3Crect x='180' y='250' width='70' height='90' opacity='.8'/%3E%3Crect x='280' y='210' width='70' height='130' opacity='.6'/%3E%3C/g%3E%3Crect x='420' y='120' width='290' height='170' rx='14' fill='%23ffffff' opacity='.93'/%3E%3Crect x='446' y='150' width='160' height='12' rx='6' fill='%230f2a35'/%3E%3Crect x='446' y='180' width='220' height='9' rx='4' fill='%23a9bdc4'/%3E%3Crect x='446' y='202' width='180' height='9' rx='4' fill='%23a9bdc4'/%3E%3C/svg%3E" alt="教程封面：深色编辑界面与青色时间轴轨道">
+            <span class="lc-play" aria-hidden="true"></span>
+            <span class="lc-vdur">14:20</span>
+          </div>
+          <div class="lc-vbody">
+            <h3 class="lc-vtitle">三分钟讲清：如何让记录片段有叙事感</h3>
+            <p class="lc-vdesc">从素材筛选、声音铺陈到段落留白，拆解五个常见误区，附一份可复用的场记模板。</p>
+            <div class="lc-vmeta"><span>剪辑思路</span><span class="dot"></span><span>11月11日</span></div>
+            <div class="lc-vfoot">
+              <span class="lc-author"><span class="lc-avatar">砚</span> 顾青砚</span>
+              <button class="lc-like" data-count="1102" aria-label="点赞"><span class="h">♡</span><span class="num">1102</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vthumb">
+            <span class="lc-vtag">健康运动</span>
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23eef4f7'/%3E%3Cpath d='M0 380 Q200 300 400 360 T800 330 V450 H0 Z' fill='%237aa6b8'/%3E%3Ccircle cx='610' cy='130' r='60' fill='%23f5c66e'/%3E%3Cg stroke='%233a5a68' stroke-width='9' stroke-linecap='round' fill='none'%3E%3Cpath d='M320 240 l40 -40 l60 30 l40 -50'/%3E%3C/g%3E%3Ccircle cx='300' cy='240' r='16' fill='%2317624a'/%3E%3Ccircle cx='470' cy='180' r='14' fill='%23c9784f'/%3E%3Cg stroke='%23b6cdd6' stroke-width='4' fill='none'%3E%3Cpath d='M60 400 q60 -22 120 0 q60 22 120 0'/%3E%3C/g%3E%3C/svg%3E" alt="运动记录封面：浅蓝坡道上奔跑路线与暖色太阳">
+            <span class="lc-play" aria-hidden="true"></span>
+            <span class="lc-vdur">22:08</span>
+          </div>
+          <div class="lc-vbody">
+            <h3 class="lc-vtitle">第 300 公里：一段没有配速表的晨跑</h3>
+            <p class="lc-vdesc">放下手表，按体感跑完十公里。这一期讲的是如何与自己的呼吸重新建立关系。</p>
+            <div class="lc-vmeta"><span>健康运动</span><span class="dot"></span><span>11月10日</span></div>
+            <div class="lc-vfoot">
+              <span class="lc-author"><span class="lc-avatar">野</span> 野原川</span>
+              <button class="lc-like" data-count="521" aria-label="点赞"><span class="h">♡</span><span class="num">521</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vthumb">
+            <span class="lc-vtag">知识科普</span>
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%232a2340'/%3E%3Cg stroke='%23b9a6f0' stroke-width='2' fill='none' opacity='.7'%3E%3Ccircle cx='400' cy='225' r='150'/%3E%3Ccircle cx='400' cy='225' r='96'/%3E%3Ccircle cx='400' cy='225' r='42'/%3E%3C/g%3E%3Cg fill='%23e9e3ff'%3E%3Ccircle cx='400' cy='75' r='9'/%3E%3Ccircle cx='550' cy='225' r='9'/%3E%3Ccircle cx='400' cy='375' r='9'/%3E%3Ccircle cx='250' cy='225' r='9'/%3E%3C/g%3E%3Cpath d='M400 225 L505 152' stroke='%23b9e06a' stroke-width='4'/%3E%3Ccircle cx='505' cy='152' r='12' fill='%23b9e06a'/%3E%3C/svg%3E" alt="科普封面：深紫背景上的同心圆轨道与荧光节点">
+            <span class="lc-play" aria-hidden="true"></span>
+            <span class="lc-vdur">12:36</span>
+          </div>
+          <div class="lc-vbody">
+            <h3 class="lc-vtitle">影像里的时间感，是怎么被制造出来的</h3>
+            <p class="lc-vdesc">从镜头时长、剪辑密度与声音延迟三个层面，解释为什么有些片子让人觉得慢。</p>
+            <div class="lc-vmeta"><span>知识科普</span><span class="dot"></span><span>11月9日</span></div>
+            <div class="lc-vfoot">
+              <span class="lc-author"><span class="lc-avatar">黎</span> 黎知白</span>
+              <button class="lc-like" data-count="934" aria-label="点赞"><span class="h">♡</span><span class="num">934</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题 -->
+  <section class="lc-section" id="lc-topic">
+    <div class="lc-wrap">
+      <div class="lc-section-head">
+        <div>
+          <span class="lc-eyebrow">专题企划 / Series</span>
+          <h2 class="lc-h2">四个正在更新的专题，围绕同一季节展开</h2>
+          <p class="lc-lead">每个专题都标注了当前状态与后续更新时间，方便你安排观看节奏。</p>
+        </div>
+      </div>
+      <div class="lc-topic-grid">
+        <article class="lc-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Crect width='600' height='420' fill='%23c76b2f'/%3E%3Ccircle cx='440' cy='120' r='96' fill='%23f3b95f' opacity='.9'/%3E%3Cpath d='M0 300 Q150 200 300 290 T600 260 V420 H0 Z' fill='%23913f1c'/%3E%3Cg fill='%23f7dcae' opacity='.85'%3E%3Ccircle cx='120' cy='90' r='8'/%3E%3Ccircle cx='190' cy='60' r='6'/%3E%3Ccircle cx='250' cy='110' r='5'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：秋日暖橙色山丘与低垂太阳">
+          <span class="k">SEASON 01</span>
+          <h3>秋日影像计划</h3>
+          <p>收录 42 部关于秋天、收获与告别的原创短片。</p>
+          <span class="st"><i></i>更新中 · 每周三</span>
+        </article>
+        <article class="lc-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Crect width='600' height='420' fill='%23334f6e'/%3E%3Cg fill='%2392b6d6'%3E%3Crect x='60' y='180' width='70' height='240'/%3E%3Crect x='160' y='120' width='90' height='300'/%3E%3Crect x='280' y='200' width='60' height='220'/%3E%3Crect x='370' y='90' width='100' height='330'/%3E%3Crect x='500' y='170' width='70' height='250'/%3E%3C/g%3E%3Cg fill='%23ffe9a8'%3E%3Crect x='72' y='200' width='10' height='14'/%3E%3Crect x='176' y='140' width='10' height='14'/%3E%3Crect x='388' y='110' width='10' height='14'/%3E%3Crect x='516' y='190' width='10' height='14'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：深蓝夜色中的城市楼群与亮灯窗户">
+          <span class="k">CITY</span>
+          <h3>城市夜行系列</h3>
+          <p>从北方重镇到南方小城，记录天黑之后仍在工作的人。</p>
+          <span class="st"><i></i>更新中 · 双周更新</span>
+        </article>
+        <article class="lc-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Crect width='600' height='420' fill='%23e9e2d2'/%3E%3Crect x='120' y='150' width='360' height='220' rx='10' fill='%23ffffff' stroke='%23b8a98c' stroke-width='4'/%3E%3Cg stroke='%23b8a98c' stroke-width='4'%3E%3Cpath d='M170 200 h260'/%3E%3Cpath d='M170 236 h200'/%3E%3Cpath d='M170 272 h230'/%3E%3C/g%3E%3Ccircle cx='300' cy='100' r='40' fill='%23a8c28a'/%3E%3C/svg%3E" alt="专题封面：米色书页与绿色印章式圆标">
+          <span class="k">CRAFT</span>
+          <h3>手艺人的一天</h3>
+          <p>木工、陶艺、篆刻与修表，六个作坊里的时间流速。</p>
+          <span class="st"><i></i>已完结 · 全 6 集</span>
+        </article>
+        <article class="lc-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Crect width='600' height='420' fill='%232e6b5e'/%3E%3Cpath d='M0 300 Q120 220 240 300 T480 280 T600 310 V420 H0 Z' fill='%23123f36'/%3E%3Ccircle cx='470' cy='110' r='46' fill='%23d9e8a8'/%3E%3Cg stroke='%23a8d0bb' stroke-width='6' fill='none' stroke-linecap='round'%3E%3Cpath d='M90 230 l50 -40 l40 24'/%3E%3Cpath d='M320 210 l40 -34 l46 26'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：墨绿山谷曲线与浅绿路径标记">
+          <span class="k">OUTDOOR</span>
+          <h3>周末出城计划</h3>
+          <p>适合普通人体力的短途户外路线与拍摄建议。</p>
+          <span class="st"><i></i>更新中 · 每周六</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="lc-section" id="lc-creator">
+    <div class="lc-wrap">
+      <div class="lc-section-head">
+        <div>
+          <span class="lc-eyebrow">创作者矩阵 / Creators</span>
+          <h2 class="lc-h2">在幸运草蓝莓影院持续更新的六位作者</h2>
+          <p class="lc-lead">他们分别来自城市记录、手作、运动与访谈方向，是平台内容生态的重要支点。</p>
+        </div>
+        <a href="#lc-join" class="lc-more-link">申请成为创作者 →</a>
+      </div>
+      <div class="lc-creator-grid lc-avatarset">
+        <div class="lc-creator">
+          <span class="lc-avatar">航</span>
+          <div class="lc-creator-main">
+            <h3>林远航 <span class="cat">城市探索</span></h3>
+            <p>常驻东南沿海，喜欢在傍晚出门，用固定镜头等待街区自己发生故事。</p>
+            <div class="nums"><span>作品 <b>84</b></span><span>关注者 <b>3.2万</b></span></div>
+            <button class="lc-creator-more" data-author="林远航" data-desc="城市探索类创作者，擅长长镜头与环境声记录，代表专题《黄昏之后》。">查看档案</button>
+          </div>
+        </div>
+        <div class="lc-creator">
+          <span class="lc-avatar" style="background:#8a6a2f">沈</span>
+          <div class="lc-creator-main">
+            <h3>沈岚 <span class="cat">人物访谈</span></h3>
+            <p>前杂志编辑，现专注长访谈。相信好问题比好设备更重要。</p>
+            <div class="nums"><span>作品 <b>52</b></span><span>关注者 <b>2.1万</b></span></div>
+            <button class="lc-creator-more" data-author="沈岚" data-desc="人物访谈方向创作者，提问风格克制，关注普通职业者的长期选择。">查看档案</button>
+          </div>
+        </div>
+        <div class="lc-creator">
+          <span class="lc-avatar" style="background:#b06a3c">柚</span>
+          <div class="lc-creator-main">
+            <h3>柚子小满 <span class="cat">生活方式</span></h3>
+            <p>记录一个人住的第三年，早餐、收纳与偶尔的加班夜宵。</p>
+            <div class="nums"><span>作品 <b>196</b></span><span>关注者 <b>5.8万</b></span></div>
+            <button class="lc-creator-more" data-author="柚子小满" data-desc="生活方式类创作者，坚持日更型记录，主张真实优先于精致。">查看档案</button>
+          </div>
+        </div>
+        <div class="lc-creator">
+          <span class="lc-avatar" style="background:#3f6e8a">顾</span>
+          <div class="lc-creator-main">
+            <h3>顾青砚 <span class="cat">教程干货</span></h3>
+            <p>十年剪辑师，把复杂技巧拆成可执行的小步骤，拒绝故弄玄虚。</p>
+            <div class="nums"><span>作品 <b>73</b></span><span>关注者 <b>4.4万</b></span></div>
+            <button class="lc-creator-more" data-author="顾青砚" data-desc="剪辑教程创作者，课程结构清晰，附赠可复用模板，深受新人欢迎。">查看档案</button>
+          </div>
+        </div>
+        <div class="lc-creator">
+          <span class="lc-avatar" style="background:#7a5a9b">野</span>
+          <div class="lc-creator-main">
+            <h3>野原川 <span class="cat">健康运动</span></h3>
+            <p>业余跑者，记录训练与伤病，也记录放弃后的重新开始。</p>
+            <div class="nums"><span>作品 <b>61</b></span><span>关注者 <b>1.9万</b></span></div>
+            <button class="lc-creator-more" data-author="野原川" data-desc="运动记录创作者，关注普通跑者的身体感受，反对唯成绩论。">查看档案</button>
+          </div>
+        </div>
+        <div class="lc-creator">
+          <span class="lc-avatar" style="background:#2f6b52">黎</span>
+          <div class="lc-creator-main">
+            <h3>黎知白 <span class="cat">知识科普</span></h3>
+            <p>影像研究者，用通俗语言解释镜头背后的技术与美学判断。</p>
+            <div class="nums"><span>作品 <b>39</b></span><span>关注者 <b>2.7万</b></span></div>
+            <button class="lc-creator-more" data-author="黎知白" data-desc="知识科普创作者，擅长把抽象概念落到具体镜头上，内容严谨。">查看档案</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品墙 -->
+  <section class="lc-section" id="lc-wall">
+    <div class="lc-wrap">
+      <div class="lc-section-head">
+        <div>
+          <span class="lc-eyebrow">影像墙 / Wall</span>
+          <h2 class="lc-h2">来自社区投稿的九张画面</h2>
+          <p class="lc-lead">尺寸不一的排列，像一间手工档案室。每张图都对应一部完整的投稿作品。</p>
+        </div>
+      </div>
+      <div class="lc-wall">
+        <figure class="w2">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 460'%3E%3Crect width='700' height='460' fill='%23f6ead4'/%3E%3Crect x='0' y='330' width='700' height='130' fill='%23d8b98a'/%3E%3Cg fill='%23ffffff'%3E%3Crect x='90' y='150' width='180' height='190' rx='8'/%3E%3Crect x='330' y='110' width='220' height='230' rx='8'/%3E%3C/g%3E%3Cg fill='%23b98a4a'%3E%3Crect x='112' y='180' width='120' height='9' rx='4'/%3E%3Crect x='112' y='204' width='86' height='9' rx='4'/%3E%3Crect x='354' y='145' width='150' height='9' rx='4'/%3E%3Crect x='354' y='170' width='110' height='9' rx='4'/%3E%3C/g%3E%3Ccircle cx='590' cy='120' r='46' fill='%23a8c28a'/%3E%3C/svg%3E" alt="作品墙大图：米色桌面上的白色纸质册页与棕色文字线条">
+          <figcaption>《纸上年轮》· 手作档案记录</figcaption>
+        </figure>
+        <figure class="w2x h2x">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23223b4f'/%3E%3Cpath d='M0 280 Q100 220 200 280 T400 260 V400 H0 Z' fill='%230f2231'/%3E%3Ccircle cx='290' cy='100' r='48' fill='%23f3e2a8'/%3E%3Cg stroke='%236f9cb5' stroke-width='3' fill='none' opacity='.6'%3E%3Cpath d='M40 200 h320'/%3E%3Cpath d='M40 240 h280'/%3E%3C/g%3E%3C/svg%3E" alt="作品墙竖图：深蓝夜色与浅黄月亮剪影">
+          <figcaption>《夜航》· 单帧影像</figcaption>
+        </figure>
+        <figure class="w2x">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%23e4efd8'/%3E%3Cg fill='%232e8b62'%3E%3Crect x='50' y='120' width='16' height='120' rx='8'/%3E%3Crect x='90' y='90' width='14' height='150' rx='7'/%3E%3Crect x='130' y='140' width='18' height='100' rx='9'/%3E%3Crect x='180' y='70' width='15' height='170' rx='7'/%3E%3C/g%3E%3Ccircle cx='310' cy='110' r='52' fill='%23b9e06a' opacity='.85'/%3E%3C/svg%3E" alt="作品墙横图：浅绿背景上的绿色植物剪影与圆点">
+          <figcaption>《窗台第三盆》· 日常记录</figcaption>
+        </figure>
+        <figure class="h2x">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 400'%3E%3Crect width='240' height='400' fill='%23f0c9b0'/%3E%3Cpath d='M0 300 Q60 250 120 300 T240 280 V400 H0 Z' fill='%23c9825f'/%3E%3Ccircle cx='120' cy='130' r='60' fill='%23fff2e6'/%3E%3C/svg%3E" alt="作品墙竖图：暖粉沙滩与白色圆形主体">
+          <figcaption>《午后两点》· 生活切片</figcaption>
+        </figure>
+        <figure>
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' fill='%23809bb8'/%3E%3Ccircle cx='120' cy='110' r='56' fill='%23f4f9ff' opacity='.9'/%3E%3Crect x='60' y='180' width='120' height='10' rx='5' fill='%23d9e6f2'/%3E%3C/svg%3E" alt="作品墙小图：灰蓝背景与白色圆形光斑">
+          <figcaption>《雾天》</figcaption>
+        </figure>
+        <figure>
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' fill='%234b3f8f'/%3E%3Cg stroke='%23c9bff5' stroke-width='4' fill='none'%3E%3Cpath d='M40 180 l40 -60 l50 30 l50 -70'/%3E%3C/g%3E%3Ccircle cx='180' cy='80' r='12' fill='%23b9e06a'/%3E%3C/svg%3E" alt="作品墙小图：紫色背景上的折线轨迹与绿色节点">
+          <figcaption>《折返》</figcaption>
+        </figure>
+        <figure class="w3">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%231d3f33'/%3E%3Cg fill='%233f7a5f'%3E%3Cpath d='M0 340 Q150 250 300 330 T600 300 V400 H0 Z'/%3E%3C/g%3E%3Cg fill='%23dcefd0'%3E%3Ccircle cx='130' cy='90' r='4'/%3E%3Ccircle cx='220' cy='60' r='3'/%3E%3Ccircle cx='330' cy='100' r='4'/%3E%3Ccircle cx='450' cy='70' r='3'/%3E%3C/g%3E%3Ccircle cx='480' cy='150' r='36' fill='%23e6f0b0' opacity='.9'/%3E%3C/svg%3E" alt="作品墙宽图：墨绿森林轮廓与星点及浅色月亮">
+          <figcaption>《入山》· 周末出城系列投稿</figcaption>
+        </figure>
+        <figure class="w2x">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%23c96a3c'/%3E%3Cpath d='M0 190 Q100 140 200 190 T400 170 V240 H0 Z' fill='%238a3f21'/%3E%3Ccircle cx='320' cy='70' r='34' fill='%23ffd99b'/%3E%3Cg fill='%23ffe9c4'%3E%3Crect x='70' y='120' width='16' height='40' rx='6'/%3E%3C/g%3E%3C/svg%3E" alt="作品墙横图：暖橙沙丘曲线与浅黄圆日">
+          <figcaption>《沙丘上头》· 旅行见闻</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 评价 -->
+  <section class="lc-section" id="lc-review">
+    <div class="lc-wrap">
+      <div class="lc-section-head">
+        <div>
+          <span class="lc-eyebrow">用户评价 / Voices</span>
+          <h2 class="lc-h2">来自观众与创作者的八段真实反馈</h2>
+          <p class="lc-lead">我们保留不同长度的表达，因为它们共同构成了社区的口碑。</p>
+        </div>
+      </div>
+      <div class="lc-review-grid lc-avatarset">
+        <div class="lc-review">
+          <div class="top"><span class="lc-avatar" style="background:#2e8b62">陈</span><div><div class="name">陈默</div><div class="role">长期观众</div></div></div>
+          <p>在幸运草蓝莓影院看了大半年，最喜欢的是它不催你。没有那种自动连播的压迫感，看完一部片子能安静一会儿，再去翻评论区。这种节奏在现在的影像平台里很少见了。</p>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="lc-review">
+          <div class="top"><span class="lc-avatar" style="background:#b06a3c">阿</span><div><div class="name">阿岚</div><div class="role">生活记录创作者</div></div></div>
+          <p>投稿反馈是真的会写具体意见。第一次投被指出「声音比画面更急于表达」，后来重剪了一遍，自己也能看出差别。这种反馈对一个业余作者很重要。</p>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="lc-review">
+          <div class="top"><span class="lc-avatar" style="background:#3f6e8a">周</span><div><div class="name">周行舟</div><div class="role">剪辑爱好者</div></div></div>
+          <p>顾青砚的教程我基本都看了，优点是每期只讲一个核心问题，不拖时长。对新人很友好，但对老手来说可能略浅，取决于你想找什么。</p>
+          <div class="stars">★★★★☆</div>
+        </div>
+        <div class="lc-review">
+          <div class="top"><span class="lc-avatar" style="background:#7a5a9b">林</span><div><div class="name">林小满</div><div class="role">周末观众</div></div></div>
+          <p>专题企划的更新状态标注得很清楚，这点我很喜欢。以前追专题总是不知道下一集什么时候来，现在页面上直接写着「每周三」，心里有数。</p>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="lc-review">
+          <div class="top"><span class="lc-avatar" style="background:#8a6a2f">何</span><div><div class="name">何一川</div><div class="role">户外爱好者</div></div></div>
+          <p>《周末出城计划》里的路线是真的按普通人体力设计的，不是那种专业登山视频。跟着拍了两期，学到了怎么在有限设备下拍出层次。</p>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="lc-review">
+          <div class="top"><span class="lc-avatar" style="background:#2f6b52">苏</span><div><div class="name">苏木</div><div class="role">社区用户</div></div></div>
+          <p>评论区氛围比想象中好。有人会认真讨论镜头语言，也有人只是分享自己的类似经历。没有太多吵架，可能跟平台一直强调具体表达有关。</p>
+          <div class="stars">★★★★☆</div>
+        </div>
+        <div class="lc-review">
+          <div class="top"><span class="lc-avatar" style="background:#c96a3c">程</span><div><div class="name">程野</div><div class="role">影像专业学生</div></div></div>
+          <p>把幸运草蓝莓影院当作学习样本。它的焦点内容板块会给出章节提示，做拉片笔记时省了不少来回拖进度条的时间，希望以后能导出章节信息。</p>
+          <div class="stars">★★★★☆</div>
+        </div>
+        <div class="lc-review">
+          <div class="top"><span class="lc-avatar" style="background:#3f7a8a">罗</span><div><div class="name">罗青</div><div class="role">品牌合作方</div></div></div>
+          <p>作为合作方沟通过两次专题联名，流程比我预期的清晰，选题沟通也愿意听建议，不是单方面提要求。后续会继续合作。</p>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 -->
+  <section class="lc-section" id="lc-news">
+    <div class="lc-wrap">
+      <div class="lc-section-head">
+        <div>
+          <span class="lc-eyebrow">企业动态 / News</span>
+          <h2 class="lc-h2">官方发布与近期更新日志</h2>
+          <p class="lc-lead">关于内容更新、创作者计划与平台机制的公开信息，均在此处发布。</p>
+        </div>
+      </div>
+
+      <div class="lc-news-list">
+        <article class="lc-news">
+          <time datetime="2026-11-18">11 / 18</time>
+          <div>
+            <h3>「秋日影像计划」专题正式上线</h3>
+            <p>本期共收录 42 部原创短片，涵盖收获、告别与城市秋景三个子单元，专题页同步开放章节目录。</p>
+          </div>
+          <span class="tag">官方发布</span>
+        </article>
+        <article class="lc-news">
+          <time datetime="2026-11-15">11 / 15</time>
+          <div>
+            <h3>创作者扶持计划第二期开启报名</h3>
+            <p>面向生活记录与城市探索方向，入选作者可获得专题联合策划机会与流量推荐资源，报名截止 12 月 10 日。</p>
+          </div>
+          <span class="tag">报名中</span>
+        </article>
+        <article class="lc-news">
+          <time datetime="2026-11-12">11 / 12</time>
+          <div>
+            <h3>播放矩阵升级：画质标签与章节索引同步优化</h3>
+            <p>焦点内容现支持章节快速定位，画质说明更加明确，方便观众在移动端与桌面端获得一致的阅读体验。</p>
+          </div>
+          <span class="tag">产品更新</span>
+        </article>
+        <article class="lc-news">
+          <time datetime="2026-11-06">11 / 06</time>
+          <div>
+            <h3>平台完成内容来源登记规范修订</h3>
+            <p>新增拍摄地与创作时间标注要求，进一步完善正版与原创内容的登记流程，保障创作者与观众的共同权益。</p>
+          </div>
+          <span class="tag">生态规范</span>
+        </article>
+        <article class="lc-news">
+          <time datetime="2026-10-28">10 / 28</time>
+          <div>
+            <h3>影像挑战「一段三分钟」结果公布</h3>
+            <p>本期共收到 318 份投稿，最终 12 部作品进入影像墙展示，完整名单与评审意见已在专题页公开。</p>
+          </div>
+          <span class="tag">比赛结果</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作 -->
+  <section class="lc-section" id="lc-partner">
+    <div class="lc-wrap">
+      <div class="lc-section-head">
+        <div>
+          <span class="lc-eyebrow">合作伙伴 / Partners</span>
+          <h2 class="lc-h2">与我们一起打磨内容的品牌与机构</h2>
+        </div>
+      </div>
+      <div class="lc-partners">
+        <span class="lc-partner"><i></i>青禾影像工作室</span>
+        <span class="lc-partner"><i></i>南岭独立放映会</span>
+        <span class="lc-partner"><i></i>拾光文化传播</span>
+        <span class="lc-partner"><i></i>山野户外俱乐部</span>
+        <span class="lc-partner"><i></i>木言手作联盟</span>
+        <span class="lc-partner"><i></i>城市漫步研究所</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="lc-section" id="lc-faq">
+    <div class="lc-wrap">
+      <div class="lc-section-head">
+        <div>
+          <span class="lc-eyebrow">帮助中心 / FAQ</span>
+          <h2 class="lc-h2">关于平台使用的常见问题</h2>
+          <p class="lc-lead">点击问题展开答案，若仍有疑问可通过页面底部的联系入口反馈。</p>
+        </div>
+      </div>
+      <div class="lc-faq">
+        <details open>
+          <summary>如何向幸运草蓝莓影院投稿作品？</summary>
+          <div class="a">通过页面底部的「创作者投稿入口」提交作品信息与素材链接，编辑会在七个工作日内反馈。请尽量附上拍摄时间、地点与创作说明，方便我们理解你的表达意图。</div>
+        </details>
+        <details>
+          <summary>平台的内容是否为原创正版？</summary>
+          <div class="a">焦点影像与专题企划均为平台自制或经作者授权的原创内容，并对上传来源执行登记。若你发现疑似侵权内容，可通过举报入口提交信息，我们会尽快核实处理。</div>
+        </details>
+        <details>
+          <summary>投稿后多久能收到反馈？</summary>
+          <div class="a">通常为七个工作日内。若遇活动征稿高峰期可能略有延迟，我们会在投稿页面标注当前的处理周期，请以页面提示为准。</div>
+        </details>
+        <details>
+          <summary>是否可以对作品画质提出要求？</summary>
+          <div class="a">我们希望投稿作品的画面清晰、声音可辨。焦点内容建议提供 1080P 及以上母版信息；日常记录类作品若在光线受限环境下拍摄，请在说明中注明，编辑会据此给出建议。</div>
+        </details>
+        <details>
+          <summary>创作者扶持计划如何参加？</summary>
+          <div class="a">每期扶持计划会在企业动态中发布报名信息，明确当期方向、名额与截止时间。入选作者将获得专题联合策划机会与流量推荐资源，并参与线下交流活动。</div>
+        </details>
+        <details>
+          <summary>评论区的交流规范是什么？</summary>
+          <div class="a">鼓励基于作品的具体讨论，反对人身攻击与无关刷屏。评论可以简短，但建议说明你的感受来自哪个画面或段落，这样交流更容易继续下去。</div>
+        </details>
+        <details>
+          <summary>平台是否支持专题合作与品牌联名？</summary>
+          <div class="a">支持。合作方可通过联系入口提交选题方向与需求，我们会评估与平台调性的匹配度，再给出联合策划方案。过往合作案例可在专题企划页面查看。</div>
+        </details>
+        <details>
+          <summary>内容更新频率是怎样的？</summary>
+          <div class="a">焦点影像每周更新，专题企划按各专题标注的节奏推进，影像墙随投稿与挑战活动动态补充。企业动态栏目会同步发布所有机制与内容层面的变化。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 投稿 / 联系 -->
+  <section class="lc-section" id="lc-join">
+    <div class="lc-wrap">
+      <div class="lc-cta">
+        <div>
+          <h2>让你的影像，被认真看完</h2>
+          <p>幸运草蓝莓影院长期开放创作者投稿与品牌合作入口。无论是一段三分钟的日常，还是一整季的专题策划，我们都愿意先听你说完想法，再一起讨论怎么把它做得更好。</p>
+          <div class="lc-cta-actions">
+            <button class="lc-btn lc-btn-primary" id="lcOpenSubmit">创作者投稿入口</button>
+            <button class="lc-btn lc-btn-ghost" id="lcOpenShare">分享本页</button>
+          </div>
+        </div>
+        <div class="lc-cta-side">
+          <div class="lc-cta-item"><b>合作邮箱</b> brand@luckyclover-berry.cn</div>
+          <div class="lc-cta-item"><b>投稿咨询</b> 工作日 10:00 - 18:00</div>
+          <div class="lc-cta-item"><b>办公地址</b> 华东 · 城市漫步研究所 3 层</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="lc-footer">
+  <div class="lc-wrap">
+    <div class="lc-footer-grid">
+      <div>
+        <a href="#lc-home" class="lc-logo">
+          <svg class="lc-logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="#17624a"/>
+            <path d="M32 13c9 7 13 13 13 21a13 13 0 0 1-26 0c0-8 4-14 13-21z" fill="#b9e06a"/>
+            <circle cx="32" cy="36" r="5" fill="#17624a"/>
+          </svg>
+          <span>幸运草蓝莓影院<small>LUCKY CLOVER · BERRY</small></span>
+        </a>
+        <p style="margin-top:12px">幸运草蓝莓影院官方网站，一个以原创影像为核心的视频品牌社区。我们坚持品质、正版与持续运营，为创作者与观众搭建值得信赖的内容生态。</p>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <ul>
+          <li><a href="#lc-focus">焦点影像</a></li>
+          <li><a href="#lc-topic">专题企划</a></li>
+          <li><a href="#lc-creator">创作者矩阵</a></li>
+          <li><a href="#lc-wall">影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#lc-about">品牌解析</a></li>
+          <li><a href="#lc-news">企业动态</a></li>
+          <li><a href="#lc-partner">合作伙伴</a></li>
+          <li><a href="#lc-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul>
+          <li><a href="#lc-join">创作者投稿</a></li>
+          <li><a href="#lc-join">品牌合作</a></li>
+          <li><a href="#lc-review">用户反馈</a></li>
+          <li><button id="lcReport" style="color:inherit;font-size:.78rem;text-align:left">内容举报</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="lc-footer-bottom">
+      <span>© 2026 幸运草蓝莓影院 版权所有 · 持续运营中 · 官方网站</span>
+      <span>内容来源登记 · 原创优先 · 品质影像社区</span>
+    </div>
+  </div>
+</footer>
+
+<button class="lc-top" id="lcTop" aria-label="回到顶部">↑</button>
+
+<div class="lc-toast" id="lcToast" role="status" aria-live="polite"></div>
+
+<div class="lc-modal-mask" id="lcModalMask">
+  <div class="lc-modal" id="lcModal" role="dialog" aria-modal="true"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var mask = document.getElementById('lcModalMask');
+  var modal = document.getElementById('lcModal');
+  var toast = document.getElementById('lcToast');
+  var toastTimer = null;
+
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('lc-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('lc-show'); }, 2200);
+  }
+  function openModal(html){
+    modal.innerHTML = html;
+    mask.classList.add('lc-show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    mask.classList.remove('lc-show');
+    document.body.style.overflow = '';
+  }
+  mask.addEventListener('click', function(e){ if(e.target === mask) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  /* 移动端导航 */
+  var burger = document.getElementById('lcBurger');
+  var mobileNav = document.getElementById('lcMobileNav');
+  burger.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('lc-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobileNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      mobileNav.classList.remove('lc-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('lcSearchInput');
+  var searchBtn = document.getElementById('lcSearchBtn');
+  var searchHint = document.getElementById('lcSearchHint');
+  var searchPool = ['黄昏之后：海边小城的夜行','对话手作人：十二年只做一件木器','一个人早餐的第 100 天','如何让记录片段有叙事感','第 300 公里：没有配速表的晨跑','影像里的时间感','秋日影像计划','城市夜行系列','手艺人的一天','周末出城计划','林远航','沈岚','柚子小满','顾青砚','手作','运动','访谈','生活记录'];
+
+  function doSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchHint.innerHTML = '试试搜索：<b>秋日影像</b>、<b>手作</b> 或创作者昵称';
+      searchHint.classList.add('lc-show');
+      return;
+    }
+    var hits = searchPool.filter(function(item){ return item.indexOf(q) > -1; });
+    if(hits.length){
+      searchHint.innerHTML = '找到 <b>' + hits.length + '</b> 条与「' + q + '」相关的内容：<br>' + hits.slice(0,3).join(' · ');
+    }else{
+      searchHint.innerHTML = '暂时没有直接匹配「' + q + '」的结果，可尝试 <b>城市</b>、<b>教程</b> 等更宽泛的词';
+    }
+    searchHint.classList.add('lc-show');
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter') doSearch(); });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value){ searchHint.classList.remove('lc-show'); }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.lc-search')){ searchHint.classList.remove('lc-show'); }
+  });
+
+  /* 点赞 */
+  document.querySelectorAll('.lc-like').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var numEl = btn.querySelector('.num');
+      var h = btn.querySelector('.h');
+      var base = parseInt(btn.getAttribute('data-count'), 10);
+      var on = btn.classList.toggle('lc-on');
+      numEl.textContent = on ? (base + 1) : base;
+      h.textContent = on ? '♥' : '♡';
+      showToast(on ? '已点赞，感谢你的喜欢' : '已取消点赞');
+    });
+  });
+
+  /* 创作者档案 */
+  document.querySelectorAll('.lc-creator-more').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-author');
+      var desc = btn.getAttribute('data-desc');
+      openModal(
+        '<h3>' + name + '</h3>' +
+        '<p class="sub">幸运草蓝莓影院签约创作者 · 官方档案</p>' +
+        '<p style="font-size:.86rem;color:#31453d;line-height:1.8">' + desc + '</p>' +
+        '<p style="font-size:.8rem;color:#7d9189;margin-top:10px">近期更新：本周内将有新作品上线，可关注其创作者主页获取动态。</p>' +
+        '<div class="row"><button class="lc-btn lc-btn-ghost" data-close>关闭</button>' +
+        '<button class="lc-btn lc-btn-primary" id="lcFollowBtn">关注该创作者</button></div>'
+      );
+      var f = document.getElementById('lcFollowBtn');
+      if(f){
+        f.addEventListener('click', function(){
+          f.textContent = '已关注';
+          f.disabled = true;
+          f.style.opacity = '.7';
+          showToast('已关注 ' + name);
+        });
+      }
+    });
+  });
+
+  /* 投稿弹窗 */
+  var openSubmit = document.getElementById('lcOpenSubmit');
+  openSubmit.addEventListener('click', function(){
+    openModal(
+      '<h3>创作者投稿入口</h3>' +
+      '<p class="sub">填写基本信息，编辑将在七个工作日内与你联系。</p>' +
+      '<label for="lcNameInput">创作者昵称</label><input id="lcNameInput" type="text" placeholder="例如：林远航">' +
+      '<label for="lcCatInput">作品方向</label><input id="lcCatInput" type="text" placeholder="城市探索 / 生活记录 / 人物访谈">' +
+      '<label for="lcDescInput">一句话说明</label><textarea id="lcDescInput" rows="3" placeholder="想拍什么、已经拍到哪一步"></textarea>' +
+      '<div class="row"><button class="lc-btn lc-btn-ghost" data-close>取消</button>' +
+      '<button class="lc-btn lc-btn-primary" id="lcSubmitOk">提交投稿</button></div>'
+    );
+    document.getElementById('lcSubmitOk').addEventListener('click', function(){
+      var n = document.getElementById('lcNameInput').value.trim();
+      if(!n){ showToast('请先填写创作者昵称'); return; }
+      closeModal();
+      showToast('投稿已提交，编辑将尽快反馈');
+    });
+  });
+
+  /* 分享弹窗 */
+  var openShare = document.getElementById('lcOpenShare');
+  function shareModal(){
+    openModal(
+      '<h3>分享幸运草蓝莓影院</h3>' +
+      '<p class="sub">把喜欢的影像社区分享给朋友</p>' +
+      '<div class="lc-share-grid">' +
+      '<button data-share="微信"><em>微</em>微信</button>' +
+      '<button data-share="微博"><em>博</em>微博</button>' +
+      '<button data-share="QQ"><em>Q</em>QQ</button>' +
+      '<button data-share="复制链接"><em>链</em>复制链接</button>' +
+      '</div>' +
+      '<div class="row" style="margin-top:16px"><button class="lc-btn lc-btn-ghost" data-close>关闭</button></div>'
+    );
+    modal.querySelectorAll('[data-share]').forEach(function(b){
+      b.addEventListener('click', function(){
+        var kind = b.getAttribute('data-share');
+        if(kind === '复制链接'){
+          var link = 'https://luckyclover-berry.cn/';
+          if(navigator.clipboard && navigator.clipboard.writeText){
+            navigator.clipboard.writeText(link).then(function(){ showToast('链接已复制到剪贴板'); })
+            .catch(function(){ showToast('复制失败，请手动复制'); });
+          }else{
+            showToast('当前浏览器不支持自动复制');
+          }
+          return;
+        }
+        showToast('已唤起' + kind + '分享提示');
+      });
+    });
+  }
+  openShare.addEventListener('click', shareModal);
+
+  /* 举报弹窗 */
+  document.getElementById('lcReport').addEventListener('click', function(){
+    openModal(
+      '<h3>内容举报 / 反馈</h3>' +
+      '<p class="sub">请描述具体问题，我们会在核实后处理。</p>' +
+      '<label for="lcReportType">问题类型</label><input id="lcReportType" type="text" placeholder="侵权 / 画质异常 / 不当评论">' +
+      '<label for="lcReportText">详细说明</label><textarea id="lcReportText" rows="3" placeholder="请写明作品名称或页面位置"></textarea>' +
+      '<div class="row"><button class="lc-btn lc-btn-ghost" data-close>取消</button>' +
+      '<button class="lc-btn lc-btn-primary" id="lcReportOk">提交反馈</button></div>'
+    );
+    document.getElementById('lcReportOk').addEventListener('click', function(){
+      var t = document.getElementById('lcReportType').value.trim();
+      if(!t){ showToast('请选择或填写问题类型'); return; }
+      closeModal();
+      showToast('反馈已收到，感谢你的监督');
+    });
+  });
+
+  /* 弹窗内关闭按钮 */
+  document.addEventListener('click', function(e){
+    if(e.target.hasAttribute && e.target.hasAttribute('data-close')) closeModal();
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('lcTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ topBtn.classList.add('lc-show'); }
+    else{ topBtn.classList.remove('lc-show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 导航高亮 */
+  var navLinks = document.querySelectorAll('.lc-nav a');
+  var sections = [];
+  navLinks.forEach(function(a){
+    var id = a.getAttribute('href');
+    var sec = document.querySelector(id);
+    if(sec) sections.push({link:a, el:sec});
+  });
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          navLinks.forEach(function(a){ a.classList.remove('lc-active'); });
+          sections.forEach(function(s){
+            if(s.el === en.target) s.link.classList.add('lc-active');
+          });
+        }
+      });
+    }, {rootMargin:'-40% 0px -50% 0px', threshold:0});
+    sections.forEach(function(s){ io.observe(s.el); });
+  }
+})();
+</script>
+</body>
+      </html>
